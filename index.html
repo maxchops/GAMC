@@ -29,35 +29,53 @@
         </div>
       </nav>
     <div class="container">
+      <div class="row">
+      <div class="col col-md-2 sidebar window card">
+        <article class="card-group-item">
+          <header class="card-header"><h6 class="title">Menu </h6></header>
+          <div class="filter-content">
+            <div class="list-group list-group-flush bg-dark ">
+              <a href="#" class="list-group-item bg-dark text-light">Dashboard</a>
+              <a href="#" class="list-group-item bg-dark text-light">Exchange  </a>
+              <a href="#" class="list-group-item bg-dark text-light">Earn  </a>
+              <a href="#" class="list-group-item bg-dark text-light">Marketplace </a>
+            </div>  <!-- list-group .// -->
+          </div>
+        </article> 
+
+      </div>
+      <div class="col col-md-10 sidebar">
         <div class="row">
-            <div class="col col-md-6 offset-md-3" id="window">
-                <h4>Swap</h4>
-                <div id="form">
-                    <div class="swapbox">
-                        <div class="swapbox_select token_select" id="from_token_select">
-                            <img class="token_image" id="from_token_img">
-                            <span id="from_token_text"></span>
-                        </div>
-                        <div class="swapbox_select">
-                            <input class="number form-control" placeholder="amount" id="from_amount">
-                        </div>
-                    </div>
-                    <div class="swapbox">
-                        <div class="swapbox_select token_select"  id="to_token_select">
-                            <img class="token_image" id="to_token_img">
-                            <span id="to_token_text"></span>
-                        </div>
-                        <div class="swapbox_select">
-                            <input class="number form-control" placeholder="amount" id="to_amount">
-                        </div>
-                    </div>
-                    <div>Estimated Gas: <span id="gas_estimate"></span></div>
-                    <button disabled class="btn btn-large btn-primary btn-block" id="swap_button">
-                        Swap
-                    </button>
-                </div>
-            </div>
-        </div>
+          <div class="col col-md-6 offset-md-3 window">
+              <h4>Swap</h4>
+              <div id="form">
+                  <div class="swapbox">
+                      <div class="swapbox_select token_select" id="from_token_select">
+                          <img class="token_image" id="from_token_img">
+                          <span id="from_token_text"></span>
+                      </div>
+                      <div class="swapbox_select">
+                          <input class="number form-control" placeholder="amount" id="from_amount">
+                      </div>
+                  </div>
+                  <div class="swapbox">
+                      <div class="swapbox_select token_select"  id="to_token_select">
+                          <img class="token_image" id="to_token_img">
+                          <span id="to_token_text"></span>
+                      </div>
+                      <div class="swapbox_select">
+                          <input class="number form-control" placeholder="amount" id="to_amount">
+                      </div>
+                  </div>
+                  <div>Estimated Gas: <span id="gas_estimate"></span></div>
+                  <button disabled class="btn btn-large btn-primary btn-block" id="swap_button">
+                      Swap
+                  </button>
+              </div>
+          </div>
+      </div>
+      </div>
+    </div>
     </div>
     <div class="modal" id="token_modal" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
